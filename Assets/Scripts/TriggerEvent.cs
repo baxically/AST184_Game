@@ -5,9 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class TriggerEvent : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D other)
+    public GameObject door, book;
+
+    void OnTriggerEnter2D(Collider2D obj)
     {
-        Debug.Log("Collision");
-        SceneManager.LoadScene("House");
+        door = GameObject.Find("Door");
+        book = GameObject.Find("Book");
+
+        if(door)
+        {
+            Debug.Log("Entered if");
+            SceneManager.LoadScene("House");
+        }
+        else if(book)
+        {
+            Debug.Log("Found book");
+        }
     }
 }

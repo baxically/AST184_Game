@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     //Variables
     public float moveSpeed = 5f;
+    //public int sceneCounter = 0;
 
     public Rigidbody2D rb;
     public Animator animator;
@@ -29,11 +30,21 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
 
-    void OnTriggerEnter(Collider obj)
+    void OnTriggerEnter2D(Collider2D obj)
     {
-        if (obj.tag == "LevelMove")
+        if(obj.tag == "RoboDoor")
         {
+            Debug.Log("Robo Room to Hallway");
             SceneManager.LoadScene("House");
+        }
+        else if(obj.tag == "Book")
+        {
+            Debug.Log("Found book");
+        }
+        else if(obj.tag == "HallwayDoor")
+        {
+            Debug.Log("Hallway to Robo Room");
+            SceneManager.LoadScene("Roboticist Room");
         }
     }
 }
