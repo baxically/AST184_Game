@@ -10,6 +10,13 @@ TagManager:
   - Board
   - Desk
   - Shelf
+  - Upstairs
+  - P1
+  - P2
+  - D1
+  - Downstairs
+  - LivingRoom
+  - Bedrooms
   layers:
   - Default
   - TransparentFX

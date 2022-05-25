@@ -32,19 +32,36 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D obj)
     {
-        if(obj.tag == "RoboDoor")
+        if (obj.tag == "RoboDoor")
         {
             Debug.Log("Robo Room to Hallway");
-            SceneManager.LoadScene("House");
+            SceneManager.LoadScene("Hallway");
         }
-        else if(obj.tag == "Book")
-        {
-            Debug.Log("Found book");
-        }
-        else if(obj.tag == "HallwayDoor")
+
+        else if (obj.tag == "HallwayDoor")
         {
             Debug.Log("Hallway to Robo Room");
             SceneManager.LoadScene("Roboticist Room");
+        }
+        else if (obj.tag == "Upstairs")
+        {
+            Debug.Log("Hallway to Upstairs");
+            SceneManager.LoadScene("Upstairs");
+        }
+        else if (obj.tag == "Downstairs")
+        {
+            Debug.Log("Upstairs to Hallway");
+            SceneManager.LoadScene("Hallway");
+        }
+        else if (obj.tag == "LivingRoom")
+        {
+            Debug.Log("Upstairs to Living Room");
+            SceneManager.LoadScene("LivingRoom");
+        }
+        else if (obj.tag == "Bedrooms")
+        {
+            Debug.Log("Upstairs to Bedroom");
+            SceneManager.LoadScene("BedroomHallway");
         }
     }
 }

@@ -12,6 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Roboticist Room.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/House.unity
+    path: Assets/Scenes/Hallway.unity
     guid: 7cacdfb0d3304474aa144ad9894bac88
+  - enabled: 1
+    path: Assets/Scenes/Upstairs.unity
+    guid: a4fd5a4b6051f6a4fa3b188a2483f077
+  - enabled: 1
+    path: Assets/Scenes/BedroomHallway.unity
+    guid: 812a66d9b496aaf498e6296f9f5095b6
+  - enabled: 1
+    path: Assets/Scenes/LivingRoom.unity
+    guid: 11d14f6dfadde0344803db615b44f6c8
+  - enabled: 1
+    path: Assets/Scenes/Outside.unity
+    guid: 93d570b748c01a243b1db1a1c02f8eda
   m_configObjects: {}

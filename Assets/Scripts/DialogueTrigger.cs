@@ -5,7 +5,7 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
-    public GameObject book, board, desk;
+    public GameObject book, board, desk, shelf, p1, p2, d1;
 
     /*public void TriggerDialogue()
     {
@@ -17,20 +17,36 @@ public class DialogueTrigger : MonoBehaviour
         book = GameObject.Find("Book");
         board = GameObject.Find("Board");
         desk = GameObject.Find("Desk");
+        p1 = GameObject.Find("Painting 1");
+        p2 = GameObject.Find("Painting 2");
+        d1 = GameObject.Find("Drawings");
 
         if (book)
         {
-            Debug.Log("Found book");
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
         }
         else if (board)
         {
-            Debug.Log("Found board");
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
         }
         else if (desk)
         {
-            Debug.Log("Found desk");
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        }
+        else if (shelf)
+        {
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        }
+        else if (p1)
+        {
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        }
+        else if (p2)
+        {
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        }
+        else if (d1)
+        {
             FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
         }
     }
