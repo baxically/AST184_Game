@@ -7,6 +7,9 @@ TagManager:
   - Book
   - RoboDoor
   - HallwayDoor
+  - Board
+  - Desk
+  - Shelf
   layers:
   - Default
   - TransparentFX

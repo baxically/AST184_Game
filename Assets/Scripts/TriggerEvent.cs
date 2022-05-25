@@ -5,21 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class TriggerEvent : MonoBehaviour
 {
-    public GameObject door, book;
+    public GameObject door;
 
     void OnTriggerEnter2D(Collider2D obj)
     {
         door = GameObject.Find("Door");
-        book = GameObject.Find("Book");
+        //book = GameObject.Find("Book");
 
         if(door)
         {
             Debug.Log("Entered if");
             SceneManager.LoadScene("House");
         }
-        else if(book)
+        /*else if(book)
         {
             Debug.Log("Found book");
-        }
+        }*/
     }
 }
