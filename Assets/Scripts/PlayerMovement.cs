@@ -68,5 +68,10 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log("Living Room to Kitchen");
             SceneManager.LoadScene("Upstairs");
         }
+        else if (obj.tag == "ToOutside")
+        {
+            Debug.Log("Living Room to Outside");
+            SceneManager.LoadScene("Outside");
+        }
     }
 }
