@@ -17,6 +17,8 @@ TagManager:
   - Downstairs
   - LivingRoom
   - Bedrooms
+  - ToKitchen
+  - ToOutside
   layers:
   - Default
   - TransparentFX
