@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Outside.unity
     guid: 93d570b748c01a243b1db1a1c02f8eda
+  - enabled: 1
+    path: Assets/Scenes/BentoMaking.unity
+    guid: 9f1c277f811dc7e498ffa2f3b4254b08
   m_configObjects: {}

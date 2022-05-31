@@ -19,6 +19,7 @@ TagManager:
   - Bedrooms
   - ToKitchen
   - ToOutside
+  - Bento
   layers:
   - Default
   - TransparentFX
